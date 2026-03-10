@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de Aula: Redes de Computadores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .highlight {
+            background-color: #e8f4fd;
+            border-left: 5px solid #2980b9;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Introdução a Redes de Computadores</h1>
+    <p>Nota de Aula #01 - O Básico do Mundo Conectado</p>
+</header>
+
+<section>
+    <h2>1. O que é uma Rede?</h2>
+    <p>De forma simples, uma <strong>Rede de Computadores</strong> é um conjunto de dispositivos (computadores, celulares, servidores) conectados entre si para compartilhar recursos e trocar informações.</p>
+    
+    <div class="highlight">
+        <strong>Analogia:</strong> Pense na rede como o sistema de correios. Para uma carta chegar, você precisa de um endereço, de um transporte e de uma linguagem que ambos entendam.
+    </div>
+</section>
+
+<section>
+    <h2>2. Componentes Principais</h2>
+    <ul>
+        <li><strong>Dispositivos Finais (Hosts):</strong> Onde a informação começa ou termina (seu PC, Smart TV).</li>
+        <li><strong>Dispositivos Intermediários:</strong> Quem guia os dados (Roteadores, Switches).</li>
+        <li><strong>Meios de Transmissão:</strong> O caminho físico (Cabos de fibra óptica, Wi-Fi).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. O Modelo OSI (As 7 Camadas)</h2>
+    <p>Para que computadores de marcas diferentes conversem, usamos padrões. O principal é o Modelo OSI:</p>
+    <table style="width:100%; border-collapse: collapse;">
+        <tr style="background:#2980b9; color:white;">
+            <th style="padding:10px; border:1px solid #ddd;">Camada</th>
+            <th style="padding:10px; border:1px solid #ddd;">Função Simples</th>
+        </tr>
+        <tr>
+            <td style="padding:10px; border:1px solid #ddd;">7. Aplicação</td>
+            <td style="padding:10px; border:1px solid #ddd;">Interface com o usuário (HTTP, Email).</td>
+        </tr>
+        <tr>
+            <td style="padding:10px; border:1px solid #ddd;">4. Transporte</td>
+            <td style="padding:10px; border:1px solid #ddd;">Garante que os dados cheguem sem erros (TCP/UDP).</td>
+        </tr>
+        <tr>
+            <td style="padding:10px; border:1px solid #ddd;">3. Rede</td>
+            <td style="padding:10px; border:1px solid #ddd;">Define a rota (Endereço IP).</td>
+        </tr>
+        <tr>
+            <td style="padding:10px; border:1px solid #ddd;">1. Física</td>
+            <td style="padding:10px; border:1px solid #ddd;">Os bits puros (cabos e sinais elétricos).</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section>
+    <h2>Formulário de Avaliação e Percepção</h2>
+    <form action="#">
+        <div class="form-group">
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+            <label>1. Qual dispositivo é responsável por encontrar a melhor rota para os dados na internet?</label>
+            <select name="pergunta1">
+                <option value="switch">Switch</option>
+                <option value="roteador">Roteador</option>
+                <option value="hub">Hub</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>2. Em qual camada do modelo OSI o endereço IP atua?</label>
+            <input type="text" name="pergunta2" placeholder="Ex: Camada de...">
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label>Como você avalia a clareza desta nota de aula?</label>
+            <input type="radio" name="percepcao" value="5"> Muito Clara <br>
+            <input type="radio" name="percepcao" value="3"> Regular <br>
+            <input type="radio" name="percepcao" value="1"> Confusa
+        </div>
+
+        <div class="form-group">
+            <label for="feedback">O que poderia ser melhorado na explicação?</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Enviar Respostas</button>
+    </form>
+</section>
+
+<footer>
+    <p style="text-align: center; font-size: 0.8em; color: #777;">&copy; 2026 - Material Didático de Redes</p>
+</footer>
+
+</body>
+</html>
